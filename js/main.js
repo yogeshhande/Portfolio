@@ -183,3 +183,25 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(s => navObserver.observe(s));
 
 });
+// Play video on hover
+document.querySelectorAll('.video-banner video').forEach(video => {
+  const card = video.closest('.proj-card');
+
+  card.addEventListener('mouseenter', () => {
+    video.play();
+  });
+
+  card.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
+document.querySelectorAll('.project-video').forEach(video => {
+  video.addEventListener('dblclick', async () => {
+    if (!document.fullscreenElement) {
+      await video.requestFullscreen();
+    } else {
+      await document.exitFullscreen();
+    }
+  });
+});
