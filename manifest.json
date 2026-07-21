@@ -1,0 +1,16 @@
+{
+  "name": "Yogesh Hande — Portfolio",
+  "short_name": "Yogesh Hande",
+  "description": "AI & Data Science student and full-stack developer portfolio.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
